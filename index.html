@@ -23,9 +23,14 @@
                 <img src="assets/logo-texto.png" alt="AlphaAleph Academy" class="logo-img">
             </a>
             <nav class="nav-links">
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#servicios" class="nav-link">Servicios</a>
-                <a href="#contacto" class="nav-btn">Contáctanos</a>
+                <a href="#inicio" class="nav-link" data-i18n="nav.home">Inicio</a>
+                <a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a>
+                <div class="lang-toggle-container">
+                    <button class="lang-toggle active" data-lang="es">ES</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-toggle" data-lang="en">EN</button>
+                </div>
+                <a href="#contacto" class="nav-btn" data-i18n="nav.contact">Contáctanos</a>
             </nav>
             <button class="mobile-menu-btn" aria-label="Abrir menú">
                 <span></span>
@@ -39,13 +44,16 @@
         <!-- Hero Section -->
         <section id="inicio" class="hero">
             <div class="hero-content">
-                <div class="badge">Nuevo ciclo escolar 2026</div>
-                <h1 class="hero-title">Domina tu futuro con <span class="gradient-text">tutorías expertas</span></h1>
-                <p class="hero-subtitle">Desbloquea tu máximo potencial académico. Ofrecemos educación personalizada y
+                <div class="badge" data-i18n="hero.badge">Nuevo ciclo escolar 2026</div>
+                <h1 class="hero-title"><span data-i18n="hero.title_start">Domina tu futuro con </span><span
+                        class="gradient-text" data-i18n="hero.title_highlight">tutorías expertas</span></h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Desbloquea tu máximo potencial académico. Ofrecemos
+                    educación personalizada y
                     de vanguardia en ciencias exactas e idiomas para estudiantes exigentes.</p>
                 <div class="hero-cta-group">
-                    <a href="#servicios" class="btn btn-primary">Descubre nuestros programas</a>
-                    <a href="#contacto" class="btn btn-secondary">Agenda una consulta</a>
+                    <a href="#servicios" class="btn btn-primary" data-i18n="hero.cta_primary">Descubre nuestros
+                        programas</a>
+                    <a href="#contacto" class="btn btn-secondary" data-i18n="hero.cta_secondary">Agenda una consulta</a>
                 </div>
             </div>
             <!-- Decorative Background Elements -->
@@ -57,8 +65,10 @@
         <section id="servicios" class="services">
             <div class="section-container">
                 <div class="section-header">
-                    <h2>Nuestros <span class="gradient-text">Servicios</span></h2>
-                    <p>Programas diseñados meticulosamente para garantizar tu éxito académico, adaptados a tus
+                    <h2><span data-i18n="services.header_start">Nuestros </span><span class="gradient-text"
+                            data-i18n="services.header_highlight">Servicios</span></h2>
+                    <p data-i18n="services.header_subtitle">Programas diseñados meticulosamente para garantizar tu éxito
+                        académico, adaptados a tus
                         necesidades de aprendizaje.</p>
                 </div>
 
@@ -73,13 +83,14 @@
                                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                             </svg>
                         </div>
-                        <h3>Tutorías Escolares</h3>
-                        <p>Fortalecemos las bases académicas en todas las materias. Ayudamos a los estudiantes a superar
+                        <h3 data-i18n="services.card1_title">Tutorías Escolares</h3>
+                        <p data-i18n="services.card1_desc">Fortalecemos las bases académicas en todas las materias.
+                            Ayudamos a los estudiantes a superar
                             sus retos diarios y mejorar sus calificaciones.</p>
                         <ul class="service-features">
-                            <li>Todas las materias</li>
-                            <li>Acompañamiento diario</li>
-                            <li>Mejora de calificaciones</li>
+                            <li data-i18n="services.card1_feat1">Todas las materias</li>
+                            <li data-i18n="services.card1_feat2">Acompañamiento diario</li>
+                            <li data-i18n="services.card1_feat3">Mejora de calificaciones</li>
                         </ul>
                     </article>
 
@@ -93,13 +104,14 @@
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                             </svg>
                         </div>
-                        <h3>Tutorías Universitarias</h3>
-                        <p>Apoyo especializado para superar los semestres más exigentes. Cobertura integral en diversas
+                        <h3 data-i18n="services.card2_title">Tutorías Universitarias</h3>
+                        <p data-i18n="services.card2_desc">Apoyo especializado para superar los semestres más exigentes.
+                            Cobertura integral en diversas
                             facultades, incluyendo áreas tecnológicas como programación y ciberseguridad.</p>
                         <ul class="service-features">
-                            <li>Ciencias exactas</li>
-                            <li>Programación</li>
-                            <li>Ciberseguridad</li>
+                            <li data-i18n="services.card2_feat1">Ciencias exactas</li>
+                            <li data-i18n="services.card2_feat2">Programación</li>
+                            <li data-i18n="services.card2_feat3">Ciberseguridad</li>
                         </ul>
                     </article>
 
@@ -116,13 +128,14 @@
                                 <polyline points="10 9 9 9 8 9"></polyline>
                             </svg>
                         </div>
-                        <h3>Acompañamiento de Tesis</h3>
-                        <p>Te guiamos paso a paso en la estructuración, investigación, desarrollo y sustentación de tu
+                        <h3 data-i18n="services.card3_title">Acompañamiento de Tesis</h3>
+                        <p data-i18n="services.card3_desc">Te guiamos paso a paso en la estructuración, investigación,
+                            desarrollo y sustentación de tu
                             proyecto de grado.</p>
                         <ul class="service-features">
-                            <li>Estructuración</li>
-                            <li>Metodología e Investigación</li>
-                            <li>Preparación de Sustentación</li>
+                            <li data-i18n="services.card3_feat1">Estructuración</li>
+                            <li data-i18n="services.card3_feat2">Metodología e Investigación</li>
+                            <li data-i18n="services.card3_feat3">Preparación de Sustentación</li>
                         </ul>
                     </article>
                 </div>
@@ -134,8 +147,10 @@
             <div class="section-container">
                 <div class="contact-grid">
                     <div class="contact-info">
-                        <h2>Contáctanos <span class="gradient-text">Hoy Mismo</span></h2>
-                        <p>Estamos listos para diseñar un plan de estudios a tu medida. Déjanos tus datos y uno de
+                        <h2><span data-i18n="contact.header_start">Contáctanos </span><span class="gradient-text"
+                                data-i18n="contact.header_highlight">Hoy Mismo</span></h2>
+                        <p data-i18n="contact.header_subtitle">Estamos listos para diseñar un plan de estudios a tu
+                            medida. Déjanos tus datos y uno de
                             nuestros asesores académicos te contactará pronto.</p>
 
                         <div class="contact-methods">
@@ -143,66 +158,20 @@
                                 <span class="method-icon">✉️</span>
                                 <div>
                                     <h4>Email</h4>
-                                    <span>contacto@alphaaleph.edu</span>
+                                    <span>alphaalephacademy@gmail.com</span>
                                 </div>
                             </div>
                             <div class="method">
                                 <span class="method-icon">📍</span>
                                 <div>
-                                    <h4>Ubicación</h4>
-                                    <span>Sesiones online y presenciales (dependiendo de la zona)</span>
+                                    <h4 data-i18n="contact.location_title">Ubicación</h4>
+                                    <span data-i18n="contact.location_desc">Sesiones online y presenciales (dependiendo
+                                        de la zona)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form-container">
-                        <form id="contactForm" class="contact-form" novalidate>
-                            <div class="form-group">
-                                <label for="name">Nombre Completo</label>
-                                <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
-                                <span class="error-message" id="nameError">El nombre es requerido</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Correo Electrónico</label>
-                                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
-                                <span class="error-message" id="emailError">Ingresa un correo válido (ej.
-                                    correo@dominio.com)</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="subject">Materia de Interés</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" disabled selected>Selecciona una opción</option>
-                                    <option value="matematicas">Matemáticas</option>
-                                    <option value="fisica">Física</option>
-                                    <option value="quimica">Química</option>
-                                    <option value="programacion">Programación</option>
-                                    <option value="otra">Otra</option>
-                                </select>
-                                <span class="error-message" id="subjectError">Por favor selecciona una materia</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Mensaje Adicional</label>
-                                <textarea id="message" name="message" rows="4"
-                                    placeholder="Cuéntanos más sobre lo que necesitas..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary submit-btn">Enviar Mensaje</button>
-
-                            <div id="formSuccess" class="form-success hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                                <span>¡Mensaje enviado con éxito! Nos contactaremos pronto.</span>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>
@@ -214,10 +183,20 @@
                 <span class="logo-symbol">α</span>
                 <span class="logo-text">AlphaAleph</span>
             </div>
-            <p class="copyright">&copy; <span id="currentYear"></span> AlphaAleph Academy. Todos los derechos
-                reservados.</p>
+            <p class="copyright">&copy; <span id="currentYear"></span> AlphaAleph Academy. <span
+                    data-i18n="footer.rights">Todos los derechos
+                    reservados.</span></p>
         </div>
     </footer>
+
+    <a href="https://wa.me/573193726720?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20tutor%C3%ADas"
+        target="_blank" class="whatsapp-btn" aria-label="Chat en WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M11.996 0A12.001 12.001 0 0 0 0 12.004c0 2.115.553 4.108 1.533 5.867L.044 24l6.305-1.639A11.944 11.944 0 0 0 11.996 24C18.625 24 24 18.62 24 12.004S18.625 0 11.996 0zm0 22.004A9.957 9.957 0 0 1 6.94 19.349l-.36-.213-4.254 1.106 1.127-4.116-.233-.37A9.932 9.932 0 0 1 1.998 12.004C1.998 6.49 6.485 2 11.996 2S22 6.49 22 12.004c0 5.513-4.488 10-10.004 10zm5.494-7.465c-.301-.151-1.78-.88-2.057-.98-.276-.101-.478-.151-.678.151-.202.302-.782.98-.958 1.18-.176.202-.352.227-.654.076-1.554-.78-2.673-1.458-3.69-3.32-.213-.393.208-.372.637-1.229.075-.151.037-.278-.001-.378-.037-.101-.678-1.638-.929-2.242-.244-.589-.493-.509-.678-.518-.176-.008-.377-.01-.578-.01-.2 0-.528.075-.805.378-.276.302-1.055 1.031-1.055 2.513s1.08 2.914 1.23 3.116c.151.201 2.124 3.243 5.148 4.545.719.31 1.28.495 1.719.633.722.228 1.38.196 1.898.119.58-.086 1.78-.727 2.03-1.432.251-.705.251-1.308.176-1.433-.075-.125-.276-.2-.577-.35z"
+                fill="currentColor" />
+        </svg>
+    </a>
 
     <script src="app.js"></script>
 </body>

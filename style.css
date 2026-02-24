@@ -240,6 +240,42 @@ ul {
     display: none;
 }
 
+.lang-toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.lang-divider {
+    color: var(--border-color);
+    font-size: 0.8rem;
+}
+
+.lang-toggle {
+    background: none;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+}
+
+.lang-toggle:hover {
+    color: var(--accent-primary);
+}
+
+.lang-toggle.active {
+    color: var(--accent-primary);
+    background: rgba(30, 58, 138, 0.08);
+}
+
 .mobile-menu-btn {
     display: flex;
     flex-direction: column;
@@ -715,6 +751,52 @@ footer {
 }
 
 /* ==========================================
+   WHATSAPP BUTTON
+=========================================== */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    animation: pulse-wa 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn svg {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #128c7e;
+}
+
+@keyframes pulse-wa {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* ==========================================
    MEDIA QUERIES (Desktop First Responsiveness)
 =========================================== */
 /* Tablet y superior */
@@ -781,8 +863,19 @@ footer {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr 1.2fr;
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-info {
         align-items: center;
+    }
+
+    .contact-methods {
+        flex-direction: row;
+        justify-content: center;
     }
 
     .footer-container {
