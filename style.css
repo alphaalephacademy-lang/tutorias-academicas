@@ -229,6 +229,13 @@ ul {
     font-size: 1.75rem;
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
 .nav-links {
     display: none;
 }
@@ -725,6 +732,10 @@ footer {
 
 /* Desktop */
 @media (min-width: 1024px) {
+    .logo-img {
+        height: 50px;
+    }
+
     .navbar {
         padding: 0.5rem 0;
     }
