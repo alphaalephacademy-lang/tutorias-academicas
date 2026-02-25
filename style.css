@@ -51,40 +51,7 @@ html {
     transform: translateY(0);
 }
 
-/* ==========================================
-   LANGUAGE TOGGLE (Custom styles retaining the look)
-=========================================== */
-.lang-toggle {
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
 
-.lang-toggle:hover {
-    color: #c4b5fd;
-    /* violet-300 */
-}
-
-.lang-toggle.active {
-    color: #ffffff;
-    pointer-events: none;
-    /* No clickable if active */
-}
-
-/* Navbar Scrolled state for text toggles */
-.navbar-scrolled .lang-toggle.active {
-    color: #4c1d95;
-    /* violet-900 */
-}
-
-.navbar-scrolled .lang-toggle:not(.active) {
-    color: #64748b;
-    /* slate-500 */
-}
-
-.navbar-scrolled .text-white\/50 {
-    color: #cbd5e1;
-    /* slate-300 separator */
-}
 
 /* ==========================================
    WHATSAPP BUTTON

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlphaAleph Academy - Tutorías Académicas de Excelencia</title>
+    <title>AlphaAleph Academy - Consultoría de Arquitectura Académica de Élite</title>
 
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
     <link rel="icon" href="assets/icono.png" type="image/png">
 </head>
 
-<body class="min-h-screen bg-white overflow-x-hidden font-sans text-slate-900">
+<body class="min-h-screen bg-slate-950 overflow-x-hidden font-sans text-slate-300 selection:bg-emerald-500/30">
 
     <!-- Navigation -->
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
@@ -52,43 +52,20 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center gap-8">
-                    <a href="#inicio" class="font-medium transition-colors hover:text-violet-500 text-white/90 nav-link"
-                        data-i18n="nav.home">Inicio</a>
-                    <a href="#servicios"
-                        class="font-medium transition-colors hover:text-violet-500 text-white/90 nav-link"
-                        data-i18n="nav.services">Servicios</a>
-                    <a href="#proceso"
-                        class="font-medium transition-colors hover:text-violet-500 text-white/90 nav-link">Proceso</a>
-                    <a href="#testimonios"
-                        class="font-medium transition-colors hover:text-violet-500 text-white/90 nav-link">Testimonios</a>
+                    <a href="#inicio" class="font-medium transition-colors hover:text-emerald-400 text-slate-300 nav-link">Inicio</a>
+                    <a href="#servicios" class="font-medium transition-colors hover:text-emerald-400 text-slate-300 nav-link">Servicios</a>
+                    <a href="#proceso" class="font-medium transition-colors hover:text-emerald-400 text-slate-300 nav-link">Metodología</a>
+                    <a href="#testimonios" class="font-medium transition-colors hover:text-emerald-400 text-slate-300 nav-link">Casos de Éxito</a>
 
-                    <!-- Language Toggle -->
-                    <div
-                        class="flex items-center gap-1 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 lang-toggle-container">
-                        <button
-                            class="lang-toggle active text-sm font-bold text-white hover:text-violet-300 transition-colors"
-                            data-lang="es">ES</button>
-                        <span class="text-white/50 text-xs">|</span>
-                        <button
-                            class="lang-toggle text-sm font-bold text-white/70 hover:text-violet-300 transition-colors"
-                            data-lang="en">EN</button>
-                    </div>
-
-                    <a href="#contacto"
-                        class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-violet-300 transition-all hover:-translate-y-0.5"
-                        data-i18n="nav.contact">
-                        Contáctanos
+                    <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico."
+                        target="_blank"
+                        class="bg-emerald-500 text-slate-950 px-6 py-2 rounded-full font-bold hover:bg-emerald-400 transition-all shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_25px_rgba(16,185,129,0.5)]">
+                        Cruzar el Abismo
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="flex items-center gap-4 md:hidden">
-                    <div
-                        class="flex items-center gap-1 bg-white/10 backdrop-blur-md px-2 py-1 rounded-full border border-white/20 lang-toggle-container">
-                        <button class="lang-toggle active text-xs font-bold text-white" data-lang="es">ES</button>
-                        <span class="text-white/50 text-xs">|</span>
-                        <button class="lang-toggle text-xs font-bold text-white/70" data-lang="en">EN</button>
-                    </div>
                     <button id="mobile-menu-btn" class="p-2 text-white">
                         <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
                     </button>
@@ -97,313 +74,222 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t shadow-lg absolute w-full left-0 top-20">
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 shadow-xl absolute w-full left-0 top-20">
             <div class="px-4 py-4 space-y-3">
-                <a href="#inicio" class="block py-2 text-slate-700 font-medium mobile-link"
-                    data-i18n="nav.home">Inicio</a>
-                <a href="#servicios" class="block py-2 text-slate-700 font-medium mobile-link"
-                    data-i18n="nav.services">Servicios</a>
-                <a href="#proceso" class="block py-2 text-slate-700 font-medium mobile-link">Proceso</a>
-                <a href="#testimonios" class="block py-2 text-slate-700 font-medium mobile-link">Testimonios</a>
-                <a href="#contacto"
-                    class="block bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-6 py-3 rounded-full font-semibold text-center mobile-link"
-                    data-i18n="nav.contact">
-                    Contáctanos
+                <a href="#inicio" class="block py-2 text-slate-300 font-medium mobile-link hover:text-emerald-400">Inicio</a>
+                <a href="#servicios" class="block py-2 text-slate-300 font-medium mobile-link hover:text-emerald-400">Servicios</a>
+                <a href="#proceso" class="block py-2 text-slate-300 font-medium mobile-link hover:text-emerald-400">Metodología</a>
+                <a href="#testimonios" class="block py-2 text-slate-300 font-medium mobile-link hover:text-emerald-400">Casos de Éxito</a>
+                <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico."
+                    target="_blank"
+                    class="block bg-emerald-500 text-slate-950 px-6 py-3 rounded-full font-bold text-center mobile-link">
+                    Cruzar el Abismo - Consulta por WhatsApp
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 border-b border-slate-800">
         <!-- Background -->
-        <div class="absolute inset-0 bg-gradient-to-br from-violet-900 via-indigo-800 to-purple-900">
-            <div class="absolute inset-0 opacity-30">
-                <div class="absolute top-20 left-10 w-72 h-72 bg-violet-500 rounded-full blur-3xl animate-pulse"></div>
-                <div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500 rounded-full blur-3xl animate-pulse"
-                    style="animation-delay: 1s"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500 rounded-full blur-3xl animate-pulse"
-                    style="animation-delay: 2s"></div>
-            </div>
+        <div class="absolute inset-0 bg-slate-950">
+            <!-- Strict Minimalist Dark ambient -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-emerald-900/20 blur-[120px] pointer-events-none"></div>
             <!-- Grid pattern -->
-            <div class="absolute inset-0 opacity-10"
-                style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 50px 50px;">
+            <div class="absolute inset-0 opacity-[0.03]"
+                style="background-image: linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px); background-size: 50px 50px;">
             </div>
         </div>
 
-        <!-- Floating elements -->
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
-            <div class="absolute top-1/4 left-10 text-6xl animate-float" style="animation-duration: 3s">📚</div>
-            <div class="absolute top-1/3 right-20 text-5xl animate-float"
-                style="animation-duration: 2.5s; animation-delay: 0.5s">🎓</div>
-            <div class="absolute bottom-1/3 left-1/4 text-4xl animate-float"
-                style="animation-duration: 3.5s; animation-delay: 1s">✨</div>
-            <div class="absolute bottom-1/4 right-1/4 text-5xl animate-float"
-                style="animation-duration: 2.8s; animation-delay: 0.3s">🚀</div>
-        </div>
-
-        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
             <div
-                class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 mb-8">
-                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
-                <span class="text-white/90 text-sm font-medium" data-i18n="hero.badge">Nuevo ciclo escolar 2026</span>
+                class="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-full px-5 py-2 mb-8 uppercase tracking-widest text-xs">
+                <span class="text-emerald-400 font-bold">Consultoría Arquitectónica de Élite</span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                <span data-i18n="hero.title_start">Domina tu futuro con </span>
-                <br />
-                <span class="bg-gradient-to-r from-amber-400 via-orange-400 to-pink-400 bg-clip-text text-transparent"
-                    data-i18n="hero.title_highlight">
-                    tutorías expertas
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                Cruza el <br class="hidden sm:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                    Abismo del Egreso
                 </span>
             </h1>
 
-            <p class="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed"
-                data-i18n="hero.subtitle">
-                Desbloquea tu máximo potencial académico. Ofrecemos educación personalizada y de vanguardia en ciencias
-                exactas e idiomas para estudiantes exigentes.
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                Metodología basada en <strong>primeros principios</strong>. Estructuramos y blindamos proyectos de grado en ingeniería y ciencias exactas para estudiantes que no se conforman con la mediocridad.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#contacto"
-                    class="group bg-white text-violet-700 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all hover:-translate-y-1 flex items-center gap-2">
-                    <span data-i18n="hero.cta_secondary">Agenda una consulta</span>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
+                <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico." target="_blank"
+                    class="group bg-emerald-500 text-slate-950 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-400 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]">
+                    <span>Cruzar el Abismo - Consulta por WhatsApp</span>
                     <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-                <a href="#servicios"
-                    class="text-white border-2 border-white/30 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-all flex items-center gap-2">
-                    <span data-i18n="hero.cta_primary">Descubre nuestros programas</span>
                 </a>
             </div>
 
             <!-- Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">500+</div>
-                    <div class="text-white/70 text-sm">Estudiantes ayudados</div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto border-t border-slate-800 pt-10">
+                <div class="p-4">
+                    <div class="text-3xl font-bold text-white mb-1">100%</div>
+                    <div class="text-slate-500 text-sm uppercase tracking-wider font-semibold">Tasa de Aprobación</div>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">98%</div>
-                    <div class="text-white/70 text-sm">Tasa de aprobación</div>
+                <div class="p-4">
+                    <div class="text-3xl font-bold text-white mb-1">Élite</div>
+                    <div class="text-slate-500 text-sm uppercase tracking-wider font-semibold">Nivel Académico</div>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">15+</div>
-                    <div class="text-white/70 text-sm">Tutores expertos</div>
+                <div class="p-4">
+                    <div class="text-3xl font-bold text-white mb-1">LaTeX</div>
+                    <div class="text-slate-500 text-sm uppercase tracking-wider font-semibold">Maquetación</div>
                 </div>
-                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
-                    <div class="text-3xl sm:text-4xl font-bold text-white mb-1">4.9</div>
-                    <div class="text-white/70 text-sm">Calificación promedio</div>
+                <div class="p-4">
+                    <div class="text-3xl font-bold text-white mb-1">24/7</div>
+                    <div class="text-slate-500 text-sm uppercase tracking-wider font-semibold">Soporte Estratégico</div>
                 </div>
             </div>
-        </div>
-
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <i data-lucide="chevron-down" class="w-8 h-8 text-white/50"></i>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="servicios" class="py-24 bg-gradient-to-b from-slate-50 to-white">
+    <section id="servicios" class="py-24 bg-slate-900 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 observe-card">
-                <div class="inline-flex items-center gap-2 bg-violet-100 text-violet-700 rounded-full px-4 py-2 mb-4">
-                    <i data-lucide="target" class="w-4 h-4"></i>
-                    <span class="text-sm font-semibold">Nuestros Servicios</span>
-                </div>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                    <span data-i18n="services.header_start">Nuestros </span>
-                    <span class="text-violet-600" data-i18n="services.header_highlight">Servicios</span>
+            <div class="text-center mb-20 observe-card">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                    Arquitectura de <span class="text-emerald-400">Alto Nivel</span>
                 </h2>
-                <p class="text-lg text-slate-600 max-w-2xl mx-auto" data-i18n="services.header_subtitle">
-                    Programas diseñados meticulosamente para garantizar tu éxito académico, adaptados a tus necesidades
-                    de aprendizaje.
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                    Transformamos la complejidad técnica en estructuras elegantes, rigurosas y listas para sustentarse ante los jurados más exigentes.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6">
                 <!-- Service 1 -->
-                <div
-                    class="observe-card group relative bg-white rounded-3xl p-8 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-violet-200/50 transition-all duration-500 hover:-translate-y-2 border border-slate-100">
-                    <div
-                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="observe-card group bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-emerald-500/50 transition-all duration-300">
+                    <div class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
+                        <i data-lucide="waves" class="w-7 h-7"></i>
                     </div>
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-violet-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="book-open" class="w-8 h-8 text-violet-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="services.card1_title">Tutorías
-                        Escolares</h3>
-                    <p class="text-slate-600 mb-6" data-i18n="services.card1_desc">Fortalecemos las bases académicas en
-                        todas las materias. Ayudamos a los estudiantes a superar sus retos diarios y mejorar sus
-                        calificaciones.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card1_feat1">Todas las materias</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Modelado de Sistemas Físicos</h3>
+                    <p class="text-slate-400 mb-6 font-light leading-relaxed">
+                        Abordamos problemas complejos desde la física deductiva. Especialistas en el <strong>modelado de sistemas de ondas y oscilaciones</strong>, mecánica analítica y electromagnetismo.
+                    </p>
+                    <ul class="space-y-3 mt-auto">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Análisis diferencial complejo</span>
                         </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card1_feat2">Acompañamiento diario</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card1_feat3">Mejora de calificaciones</span>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Simulaciones computacionales</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="observe-card group relative bg-white rounded-3xl p-8 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-violet-200/50 transition-all duration-500 hover:-translate-y-2 border border-slate-100"
-                    style="transition-delay: 100ms">
-                    <div
-                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="observe-card group bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-emerald-500/50 transition-all duration-300" style="transition-delay: 100ms">
+                    <div class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
+                        <i data-lucide="network" class="w-7 h-7"></i>
                     </div>
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-violet-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="users" class="w-8 h-8 text-violet-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="services.card2_title">Tutorías
-                        Universitarias</h3>
-                    <p class="text-slate-600 mb-6" data-i18n="services.card2_desc">Apoyo especializado para superar los
-                        semestres más exigentes. Cobertura integral en diversas facultades, incluyendo áreas
-                        tecnológicas como programación y ciberseguridad.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card2_feat1">Ciencias exactas</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Integración y Logística Industrial</h3>
+                    <p class="text-slate-400 mb-6 font-light leading-relaxed">
+                        Estructuración de procesos de ingeniería. Nos enfocamos en el <strong>diseño de KPIs e integración logística en cadenas de suministro</strong> para proyectos de alto calibre.
+                    </p>
+                    <ul class="space-y-3 mt-auto">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Optimización de procesos</span>
                         </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card2_feat2">Programación</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card2_feat3">Ciberseguridad</span>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Modelos estocásticos de suministro</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="observe-card group relative bg-white rounded-3xl p-8 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-violet-200/50 transition-all duration-500 hover:-translate-y-2 border border-slate-100"
-                    style="transition-delay: 200ms">
-                    <div
-                        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-t-3xl opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="observe-card group bg-slate-800/50 rounded-2xl p-8 border border-slate-700 hover:border-emerald-500/50 transition-all duration-300" style="transition-delay: 200ms">
+                    <div class="w-14 h-14 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center mb-6 text-emerald-400">
+                        <i data-lucide="file-code-2" class="w-7 h-7"></i>
                     </div>
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-violet-100 to-indigo-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i data-lucide="award" class="w-8 h-8 text-violet-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3" data-i18n="services.card3_title">Acompañamiento de
-                        Tesis</h3>
-                    <p class="text-slate-600 mb-6" data-i18n="services.card3_desc">Te guiamos paso a paso en la
-                        estructuración, investigación, desarrollo y sustentación de tu proyecto de grado.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card3_feat1">Estructuración</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Maquetación LaTeX Nivel Paper</h3>
+                    <p class="text-slate-400 mb-6 font-light leading-relaxed">
+                        La presentación es el reflejo del rigor. Realizamos un <strong>formateo impecable de documentos utilizando LaTeX/Overleaf</strong>, adaptándonos al formato de cualquier institución.
+                    </p>
+                    <ul class="space-y-3 mt-auto">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Ecuaciones e ilustraciones vectoriales</span>
                         </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card3_feat2">Metodología e Investigación</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-700">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0"></i>
-                            <span data-i18n="services.card3_feat3">Preparación de Sustentación</span>
+                        <li class="flex items-start gap-3 text-slate-300 text-sm">
+                            <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
+                            <span>Gestión bibliográfica rigurosa (BibTeX)</span>
                         </li>
                     </ul>
                 </div>
+            </div>
+            
+            <div class="mt-16 text-center observe-card">
+                 <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico." target="_blank"
+                    class="inline-flex bg-slate-800 text-white border border-slate-700 px-8 py-4 rounded-full font-semibold hover:border-emerald-500 hover:text-emerald-400 transition-colors">
+                    Cruzar el Abismo - Consulta por WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section id="proceso"
-        class="py-24 bg-gradient-to-br from-violet-900 via-indigo-900 to-purple-900 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20 pointer-events-none">
-            <div class="absolute top-0 left-1/4 w-96 h-96 bg-violet-500 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-500 rounded-full blur-3xl"></div>
-        </div>
-
+    <section id="proceso" class="py-24 bg-slate-950 border-b border-slate-800 relative overflow-hidden">
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-violet-900/10 blur-[100px] pointer-events-none"></div>
+        
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 observe-card">
-                <div
-                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-4">
-                    <i data-lucide="clock" class="w-4 h-4 text-amber-400"></i>
-                    <span class="text-sm font-semibold text-white">Proceso Simple</span>
-                </div>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-                    ¿Cómo funciona?
+            <div class="text-center mb-20 observe-card">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                    Metodología de <span class="text-violet-400">Primeros Principios</span>
                 </h2>
-                <p class="text-lg text-white/70 max-w-2xl mx-auto">
-                    En solo 4 pasos comenzarás a ver resultados
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto font-light">
+                    Construimos conocimiento desde sus bases fundamentales, garantizando una comprensión profunda irrefutable ante cualquier jurado.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-4 gap-6">
                 <!-- Step 1 -->
                 <div class="relative observe-card">
-                    <div
-                        class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-violet-400 to-transparent">
-                    </div>
-                    <div
-                        class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 transition-all">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white shadow-lg shadow-amber-500/30">
-                            1</div>
-                        <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+                    <div class="hidden md:block absolute top-12 left-1/2 w-full h-px bg-slate-800"></div>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center z-10">
+                        <div class="w-20 h-20 bg-slate-950 border-2 border-slate-800 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-slate-300">
+                            01
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Conversamos</h3>
-                        <p class="text-white/70">Nos cuentas tus necesidades y objetivos académicos</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Diagnóstico</h3>
+                        <p class="text-sm text-slate-400 font-light">Analizamos la brecha técnica actual de tu proyecto.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
                 <div class="relative observe-card" style="transition-delay: 100ms">
-                    <div
-                        class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-violet-400 to-transparent">
-                    </div>
-                    <div
-                        class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 transition-all">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white shadow-lg shadow-amber-500/30">
-                            2</div>
-                        <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="lightbulb" class="w-7 h-7 text-white"></i>
+                    <div class="hidden md:block absolute top-12 left-1/2 w-full h-px bg-slate-800"></div>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center z-10">
+                        <div class="w-20 h-20 bg-slate-950 border-2 border-emerald-500/30 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-emerald-400">
+                            02
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Diseñamos tu plan</h3>
-                        <p class="text-white/70">Creamos una estrategia personalizada para ti</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Arquitectura</h3>
+                        <p class="text-sm text-slate-400 font-light">Diseñamos el esqueleto matemático y lógico.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
                 <div class="relative observe-card" style="transition-delay: 200ms">
-                    <div
-                        class="hidden md:block absolute top-12 left-1/2 w-full h-0.5 bg-gradient-to-r from-violet-400 to-transparent">
-                    </div>
-                    <div
-                        class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 transition-all">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white shadow-lg shadow-amber-500/30">
-                            3</div>
-                        <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="trending-up" class="w-7 h-7 text-white"></i>
+                    <div class="hidden md:block absolute top-12 left-1/2 w-full h-px bg-slate-800"></div>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center z-10">
+                        <div class="w-20 h-20 bg-slate-950 border-2 border-violet-500/30 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-violet-400">
+                            03
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Avanzamos juntos</h3>
-                        <p class="text-white/70">Trabajamos contigo hasta alcanzar tus metas</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Ejecución</h3>
+                        <p class="text-sm text-slate-400 font-light">Implementamos y simulamos con rigor académico.</p>
                     </div>
                 </div>
                 <!-- Step 4 -->
                 <div class="relative observe-card" style="transition-delay: 300ms">
-                    <div
-                        class="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 text-center hover:bg-white/20 transition-all">
-                        <div
-                            class="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-white shadow-lg shadow-amber-500/30">
-                            4</div>
-                        <div class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="award" class="w-7 h-7 text-white"></i>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center z-10">
+                        <div class="w-20 h-20 bg-emerald-500/10 border-2 border-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 text-xl font-bold text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
+                            04
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Celebramos tu éxito</h3>
-                        <p class="text-white/70">Ves los resultados y creces académicamente</p>
+                        <h3 class="text-lg font-bold text-white mb-2">Egreso</h3>
+                        <p class="text-sm text-slate-400 font-light">Documentación LaTeX y sustentación sólida.</p>
                     </div>
                 </div>
             </div>
@@ -411,44 +297,40 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonios" class="py-24 bg-white relative overflow-hidden">
+    <section id="testimonios" class="py-24 bg-slate-900 relative overflow-hidden border-b border-slate-800">
+        <div class="absolute left-0 top-0 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 observe-card">
-                <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-700 rounded-full px-4 py-2 mb-4">
-                    <i data-lucide="heart" class="w-4 h-4"></i>
-                    <span class="text-sm font-semibold">Testimonios</span>
-                </div>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                    Lo que dicen nuestros
-                    <span class="text-violet-600"> estudiantes</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    Resultados de <span class="text-emerald-400">Élite</span>
                 </h2>
-                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-                    Historias reales de éxito que nos motivan a seguir adelante
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto font-light">
+                    Nuestros clientes no buscan solo aprobar; buscan dominar.
                 </p>
             </div>
 
             <!-- Carousel Component -->
             <div class="max-w-4xl mx-auto observe-card" id="testimonial-carousel">
-                <div
-                    class="relative bg-gradient-to-br from-violet-50 to-indigo-50 rounded-3xl p-8 sm:p-12 border border-violet-100">
-                    <div class="absolute -top-4 -left-4 text-6xl text-violet-300">"</div>
-
+                <div class="relative bg-slate-950 rounded-2xl p-8 sm:p-14 border border-slate-800 shadow-2xl">
+                    <div class="absolute top-8 left-8 text-6xl text-slate-800 font-serif leading-none">"</div>
+                    
                     <div class="relative z-10 transition-opacity duration-300" id="testimonial-content">
                         <div class="flex items-center gap-1 justify-center mb-6" id="testimonial-stars">
                             <!-- Stars injectadas mediante JS -->
                         </div>
-                        <p class="text-xl sm:text-2xl text-slate-700 text-center mb-8 leading-relaxed"
+                        <p class="text-xl sm:text-2xl text-slate-300 text-center mb-10 leading-relaxed font-light italic"
                             id="testimonial-text">
-                            <!-- Testo inyectado mediante JS -->
+                            <!-- Texto inyectado mediante JS -->
                         </p>
                         <div class="flex flex-col items-center">
-                            <div class="text-5xl mb-3" id="testimonial-img"></div>
-                            <div class="text-lg font-bold text-slate-900" id="testimonial-name"></div>
-                            <div class="text-violet-600" id="testimonial-role"></div>
+                            <div class="text-4xl mb-3" id="testimonial-img"></div>
+                            <div class="text-lg font-bold text-white tracking-wide" id="testimonial-name"></div>
+                            <div class="text-emerald-400 text-sm uppercase tracking-wider font-semibold mt-1" id="testimonial-role"></div>
                         </div>
                     </div>
 
-                    <div class="flex justify-center gap-2 mt-8" id="testimonial-dots">
+                    <div class="flex justify-center gap-3 mt-10" id="testimonial-dots">
                         <!-- Dots inyectados mediante JS -->
                     </div>
                 </div>
@@ -456,184 +338,49 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-violet-600 via-indigo-600 to-purple-600 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-30 pointer-events-none">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center observe-card">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
-                ¿Listo para transformar tu vida académica?
+    <!-- Contact Section (WhatsApp Only) -->
+    <section id="contacto" class="py-32 bg-slate-950 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center observe-card">
+            
+            <div class="w-20 h-20 bg-slate-900 border border-slate-800 rounded-full flex items-center justify-center mx-auto mb-8 text-emerald-400 shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+                <i data-lucide="shield-check" class="w-10 h-10"></i>
+            </div>
+            
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">
+                El abismo te separa del <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">título</span>
             </h2>
-            <p class="text-lg text-white/90 mb-8">
-                Tu primera consulta es completamente gratis. Sin compromisos.
+            <p class="text-xl text-slate-400 mb-12 font-light max-w-2xl mx-auto">
+                No arriesgues meses de esfuerzo por falta de estructura. Contáctanos directamente por WhatsApp para trazar la hoja de ruta definitiva hacia tu grado.
             </p>
-            <a href="#contacto"
-                class="inline-flex items-center gap-2 bg-white text-violet-700 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl hover:shadow-white/30 transition-all hover:-translate-y-1">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
-                Quiero mi consulta gratis
+            
+            <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico."
+                target="_blank"
+                class="inline-flex bg-emerald-500 text-slate-950 px-10 py-5 rounded-full font-bold text-xl hover:bg-emerald-400 transition-all items-center gap-3 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_40px_rgba(16,185,129,0.5)]">
+                <i data-lucide="message-square" class="w-6 h-6"></i>
+                Cruzar el Abismo - Consulta por WhatsApp
             </a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16">
-                <!-- Info Contact -->
-                <div class="observe-card">
-                    <div
-                        class="inline-flex items-center gap-2 bg-violet-100 text-violet-700 rounded-full px-4 py-2 mb-4">
-                        <i data-lucide="send" class="w-4 h-4"></i>
-                        <span class="text-sm font-semibold">Contacto</span>
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                        <span data-i18n="contact.header_start">Contáctanos </span><br>
-                        <span class="text-violet-600" data-i18n="contact.header_highlight">Hoy Mismo</span>
-                    </h2>
-                    <p class="text-lg text-slate-600 mb-8" data-i18n="contact.header_subtitle">
-                        Estamos listos para diseñar un plan de estudios a tu medida. Escríbenos directamente por
-                        WhatsApp y uno de nuestros asesores académicos te contactará pronto.
-                    </p>
-
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 bg-violet-100 rounded-2xl flex items-center justify-center">
-                                <i data-lucide="mail" class="w-6 h-6 text-violet-600"></i>
-                            </div>
-                            <div>
-                                <div class="text-sm text-slate-500">Email</div>
-                                <div class="text-lg font-semibold text-slate-900">alphaalephacademy@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 bg-violet-100 rounded-2xl flex items-center justify-center">
-                                <i data-lucide="phone" class="w-6 h-6 text-violet-600"></i>
-                            </div>
-                            <div>
-                                <div class="text-sm text-slate-500">WhatsApp</div>
-                                <div class="text-lg font-semibold text-slate-900">+57 319 372 6720</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-4">
-                            <div class="w-14 h-14 bg-violet-100 rounded-2xl flex items-center justify-center">
-                                <i data-lucide="map-pin" class="w-6 h-6 text-violet-600"></i>
-                            </div>
-                            <div>
-                                <div class="text-sm text-slate-500" data-i18n="contact.location_title">Ubicación</div>
-                                <div class="text-lg font-semibold text-slate-900" data-i18n="contact.location_desc">
-                                    Sesiones online y presenciales (dependiendo de la zona)</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-10">
-                        <div class="text-sm text-slate-500 mb-3">Síguenos</div>
-                        <div class="flex gap-3">
-                            <a href="#"
-                                class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center hover:bg-violet-200 transition-colors">
-                                <i data-lucide="instagram" class="w-5 h-5 text-violet-600"></i>
-                            </a>
-                            <a href="#"
-                                class="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center hover:bg-violet-200 transition-colors">
-                                <i data-lucide="linkedin" class="w-5 h-5 text-violet-600"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form (Retained aesthetic from template, though logic was removed in earlier iterations, keep for visual completion or future use) -->
-                <div class="observe-card bg-white rounded-3xl p-8 sm:p-10 shadow-xl shadow-slate-200/50 border border-slate-100"
-                    style="transition-delay: 100ms">
-                    <form class="space-y-6">
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-2">Nombre</label>
-                                <input type="text" placeholder="Tu nombre"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-violet-500 focus:ring-4 focus:ring-violet-100 transition-all outline-none" />
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
-                                <input type="email" placeholder="tu@email.com"
-                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-violet-500 focus:ring-4 focus:ring-violet-100 transition-all outline-none" />
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">Teléfono / WhatsApp</label>
-                            <input type="tel" placeholder="+57 319 372 6720"
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-violet-500 focus:ring-4 focus:ring-violet-100 transition-all outline-none" />
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">¿En qué podemos
-                                ayudarte?</label>
-                            <select
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-violet-500 focus:ring-4 focus:ring-violet-100 transition-all outline-none bg-white">
-                                <option>Selecciona una opción</option>
-                                <option>Tutorías Escolares</option>
-                                <option>Tutorías Universitarias</option>
-                                <option>Acompañamiento de Tesis</option>
-                                <option>Otro</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-slate-700 mb-2">Mensaje</label>
-                            <textarea rows="4" placeholder="Cuéntanos más sobre tus necesidades..."
-                                class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-violet-500 focus:ring-4 focus:ring-violet-100 transition-all outline-none resize-none"></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-gradient-to-r from-violet-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-violet-300 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2">
-                            Enviar mensaje
-                            <i data-lucide="send" class="w-5 h-5"></i>
-                        </button>
-                    </form>
-                </div>
+            
+            <div class="mt-16 text-slate-500 font-mono text-sm">
+                alphaalephacademy@gmail.com | +57 319 372 6720
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-                <div class="flex items-center gap-3">
-                    <img src="assets/icono.png" alt="Icono" class="w-10 h-10 object-contain">
-                    <span class="text-xl font-bold text-white">AlphaAleph</span>
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6 text-slate-400">
-                    <a href="#servicios" class="hover:text-white transition-colors"
-                        data-i18n="nav.services">Servicios</a>
-                    <a href="#proceso" class="hover:text-white transition-colors">Proceso</a>
-                    <a href="#testimonios" class="hover:text-white transition-colors">Testimonios</a>
-                    <a href="#contacto" class="hover:text-white transition-colors" data-i18n="nav.contact">Contacto</a>
-                </div>
-
-                <div class="flex gap-3">
-                    <a href="#"
-                        class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-violet-600 transition-colors">
-                        <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-violet-600 transition-colors">
-                        <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
-                    </a>
-                </div>
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-3 mb-8">
+                <img src="assets/icono.png" alt="Icono" class="w-8 h-8 object-contain">
+                <span class="text-lg font-bold text-white tracking-widest uppercase">AlphaAleph</span>
             </div>
-
-            <div class="border-t border-slate-800 mt-12 pt-8 text-center">
-                <p class="text-slate-500">
-                    &copy; <span id="currentYear"></span> AlphaAleph Academy. <span data-i18n="footer.rights">Todos los
-                        derechos reservados.</span> Hecho con <i data-lucide="heart"
-                        class="w-4 h-4 inline text-red-500 fill-red-500"></i> para estudiantes.
-                </p>
-            </div>
+            <p class="text-slate-600 text-sm">
+                &copy; <span id="currentYear"></span> Consultoría Académica de Élite. Todos los derechos reservados.
+            </p>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/573193726720?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20tutor%C3%ADas"
+    <a href="https://wa.me/573193726720?text=Hola,%20busco%20cruzar%20el%20abismo%20acad%C3%A9mico."
         target="_blank" class="whatsapp-btn" aria-label="Chat en WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
