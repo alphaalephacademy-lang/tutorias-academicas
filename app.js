@@ -58,7 +58,78 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 4. SCROLL ANIMATIONS (INTERSECTION OBSERVER) ---
+    // --- 4. HERO CAROUSEL LOGIC ---
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('#hero-dots button');
+    let activeHeroSlide = 0;
+    let heroInterval;
+
+    const renderHeroSlide = (index) => {
+        if (!heroSlides.length || !heroDots.length) return;
+
+        // Hide all
+        heroSlides.forEach((slide, idx) => {
+            slide.classList.remove('opacity-100', 'z-20');
+            slide.classList.add('opacity-0', 'z-0', 'pointer-events-none');
+
+            // Adjust dot style based on theme of the slide
+            const dot = heroDots[idx];
+            if (idx === index) {
+                slide.classList.remove('opacity-0', 'z-0', 'pointer-events-none');
+                slide.classList.add('opacity-100', 'z-20');
+
+                // Color match based on slide
+                if (idx === 0) dot.className = 'w-12 h-2 rounded-full bg-emerald-500 transition-all';
+                else if (idx === 1) dot.className = 'w-12 h-2 rounded-full bg-violet-500 transition-all';
+                else document.className = 'w-12 h-2 rounded-full bg-cyan-500 transition-all'; // idx === 2
+
+            } else {
+                dot.className = 'w-4 h-2 rounded-full bg-slate-700 hover:bg-slate-500 transition-all';
+            }
+        });
+    };
+
+    const startHeroCarousel = () => {
+        heroInterval = setInterval(() => {
+            activeHeroSlide = (activeHeroSlide + 1) % heroSlides.length;
+            renderHeroSlide(activeHeroSlide);
+        }, 7000); // 7 seconds per slide (long text)
+    };
+
+    if (heroDots.length) {
+        heroDots.forEach((btn, idx) => {
+            btn.addEventListener('click', () => {
+                clearInterval(heroInterval);
+                activeHeroSlide = idx;
+                renderHeroSlide(activeHeroSlide);
+                startHeroCarousel(); // restart timer
+            });
+        });
+
+        // Setup Arrow navigation
+        const prevBtn = document.getElementById('hero-prev');
+        const nextBtn = document.getElementById('hero-next');
+
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                clearInterval(heroInterval);
+                activeHeroSlide = (activeHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+                renderHeroSlide(activeHeroSlide);
+                startHeroCarousel();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                clearInterval(heroInterval);
+                activeHeroSlide = (activeHeroSlide + 1) % heroSlides.length;
+                renderHeroSlide(activeHeroSlide);
+                startHeroCarousel();
+            });
+        }
+
+        startHeroCarousel();
+    }
+
+    // --- 5. SCROLL ANIMATIONS (INTERSECTION OBSERVER) ---
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -78,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // --- 5. TESTIMONIALS CAROUSEL ---
+    // --- 6. TESTIMONIALS CAROUSEL ---
     const testimonials = [
         {
             name: 'Andrés V.',
